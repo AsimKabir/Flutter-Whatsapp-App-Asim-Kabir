@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/pages/packages/StatusesUserModel.dart';
 import 'package:my_app/pages/widgets/CallsCard.dart';
+import 'package:my_app/pages/widgets/StatusesCard.dart';
 
 class Statuses extends StatelessWidget {
   List<StatusesUserModel> chatUsers = [
@@ -47,7 +48,7 @@ class Statuses extends StatelessWidget {
       padding: EdgeInsets.only(top: 16),
       physics: NeverScrollableScrollPhysics(),
       itemBuilder: (context, index){
-        return CallsCard(
+        return StatusesCard(
           name: chatUsers[index].name,
           // messageText: chatUsers[index].messageText,
           imageUrl: chatUsers[index].imageURL,
